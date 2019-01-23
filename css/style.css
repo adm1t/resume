@@ -1,0 +1,222 @@
+body{
+    cursor: default;
+}
+
+#main-container{
+    max-width: 840px;
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    font-size: 5.5vw;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    margin: 25px;
+    color: #4b0000;
+    letter-spacing: 5px;
+}
+
+@media all and (min-width: 1360px){
+    header{
+        font-size: 72px;
+    }
+}
+
+#about-me-section article{
+    display: flex;
+    flex-direction: row;
+}
+
+#about-me-section article figure{
+    min-width: 30%;
+    text-align: center;
+}
+
+#about-me-section article figure img{
+    border-radius: 20px;
+}
+
+article aside{
+    font-family: 'Neucha', cursive;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 0 20px;
+}
+
+@media all and (max-width: 750px) {
+    #about-me-section article{
+        flex-direction: column;
+    }
+    #about-me-section article figure{
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 400px){
+    #about-me-section article figure img{
+        border-radius: 0;
+    }
+}
+
+#my-projects-viewer{
+    margin: 0 15px;
+}
+
+#my-projects-viewer nav{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px #4b0000 solid;
+}
+
+#my-projects-viewer nav .project{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+    font-family: 'Neucha', cursive;
+    letter-spacing: 3.5px;
+    cursor: pointer;
+    border-right: 1px #4b0000 solid;
+}
+
+#my-projects-viewer nav .project:nth-of-type(1){
+    border-left: 1px #4b0000 solid;
+}
+
+#my-projects-viewer nav .project.selected{
+    background-color: #4b0000;
+    color: aliceblue;
+    cursor: default;
+}
+
+@media all and (max-width: 750px) {
+    #my-projects-viewer{
+        border-radius: 0;
+        border: none;
+    }
+    #my-projects-viewer nav{
+        flex-direction: column;
+    }
+    #my-projects-viewer nav .project{
+        order: 0;
+    }
+    #my-projects-viewer nav .project.upper{
+        border-top: 1px #4b0000 solid;
+        border-bottom: 1px #4b0000 dashed;
+        order: -1;
+    }
+    #my-projects-viewer nav .project.selected{
+        order: 1;
+        border: none;
+    }
+    #my-projects-viewer nav .project:not(.selected) {
+        border-left-color:transparent;
+        border-right-color:transparent;
+    }
+}
+
+#my-projects-viewer article{
+    display: flex;
+    border: 1px #4b0000 solid;
+}
+
+#my-projects-viewer article figure{
+    margin: 10px;
+    min-width: 31%;
+}
+
+#my-projects-viewer article figure img{
+    filter: grayscale(100%);
+    width: 100%;
+    transition: all 1s;
+}
+#my-projects-viewer article figure img:hover{
+    filter: none;
+}
+
+#my-projects-viewer article aside{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#my-projects-viewer article aside p{
+    margin: 0;
+}
+
+#my-projects-viewer article aside p:not(.selected),
+#my-projects-viewer article aside a:not(.selected),
+#my-projects-viewer article figure img:not(.selected){
+    display: none;
+}
+
+@media all and (max-width: 750px){
+    #my-projects-viewer article{
+        flex-direction: column-reverse;
+    }
+    #my-projects-viewer article figure{
+        margin: 0;
+    }
+    .linked-button{
+        margin-top: 20px;
+    }
+}
+
+.linked-button{
+    text-align: center;
+    border: 1px solid #4b0000;
+    padding: 7px;
+    color: #4b0000;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-size: 14px;
+    transition: all 0.25s ease-out;
+}
+
+.linked-button:hover{
+    background-color: #4b0000;
+    color: aliceblue;
+    transition: all 0.25s ease-in;
+}
+
+#contacts-section{
+    margin-top: 50px;
+}
+
+#contacts-section .icons-block{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    border-bottom: 2px #4b0000 solid;
+    border-top: 2px #4b0000 solid;
+    padding: 10px;
+}
+
+#contacts-section .icons-block a{
+    height: 45px;
+    text-align: center;
+}
+
+#contacts-section .icons-block img{
+    opacity: 0.5;
+    height: 100%;
+}
+
+#contacts-section .icons-block img:hover{
+    opacity: 1;
+}
+
+@media all and (max-width: 750px) {
+    #contacts-section .icons-block img{
+        max-width: 70%;
+    }
+    #contacts-section .icons-block a{
+        height: 30px;
+    }
+}

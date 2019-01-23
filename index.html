@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script async type="text/javascript" src="js/script.js" ></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neucha">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favico.png">
+
+    <title> Филиппов Дмитрий Васильевич </title>
+</head>
+<body>
+    <div id="main-container">
+        <section id="about-me-section">
+            <header>− ОБО МНЕ −</header>
+            <article>
+                <figure>
+                    <img src="img/myAvatar.png" alt="Филиппов Дмитрий Васильевич">
+                </figure>
+                <aside>
+                    <p>
+                        Родился 22 июня 1995 г. в Нижнем Новгороде.<br>
+                        В 2013 г. окончил “физ-мат” лицей №180.<br>
+                        В 2017 г. получил диплом о высшем образовании, усвоив
+                        программу бакалавриата НИУ РАНХиГС по направлению
+                        “Прикладная информатика” и защитив на “отлично”
+                        дипломный проект.<br>
+                        С ноября 2017 по ноябрь 2018 проходил службу
+                        в Вооруженных Силах РФ.<br><br>
+
+                        Почему фронтенд?<br>
+                        - Как минимум, потому, что у фронтендера
+                        может быть вот такое вот красивое резюме :]
+                    </p>
+                </aside>
+            </article>
+        </section>
+        <section id="my-projects-section">
+            <header>− МОИ ПРОЕКТЫ −</header>
+            <div id="my-projects-viewer">
+                <nav>
+                    <div class="project selected" id="dendy">dendygames.kmx.ru</div>
+                    <div class="project upper" id="nizhrap">НижРэпQuiz</div>
+                    <div class="project" id="html-editor">HTML Visual Editor</div>
+                </nav>
+                <article>
+                    <aside>
+                        <p class="dendy selected">
+                            &emsp;dendygames.kmx.ru - начало моего пути в веб-разработке. Простейший wap-сайт, созданный в далеком 2010 году с помощью конструктора wap.kmx.ru
+                            непосредственно с мобильного телефона. Представляет собой набор страниц, связанных гиперссылками, а также эмуляторов и "ромов" 8-битной приставки "Dendy".
+                            <br>&emsp;Работая над этим сайтом, я получил первое представление о структуре html-документов, базовых html-тегах и css-свойствах.
+                            <br>&emsp;В данный момент сайт недоступен по своему адресу в связи с закрытием проекта "kmx.ru".
+                        </p>
+                        <p class="nizhrap">
+                            &emsp;НижРэпQuiz - это некий аналог игры "Кто хочет стать миллионером" для ценителей Нижегородского хип-хопа.
+                            <br>&emsp;Некоммерческая история. Дабы не заморачиваться над изящными интерфейсными решениями в сжатые сроки, основополагающим был выбран фреймворк Bootstrap.
+                            В данном проекте я впервые поработал с VK API (приложение парсит данные записей со стены публичной страницы).
+                        </p>
+                        <p class="html-editor">
+                            &emsp;HTML Visual Editor - визуальный конструктор html-страниц, по совместительству - мой дипломный проект, вся логика которого обрабатывается на стороне клиента
+                            (в т.ч. непосредственно в браузере генерируется и итоговый html-файл).
+                            <br>&emsp;Имеет ряд недороботок и недостатков, однако в процессе написания был получен бесценный опыт использования множества полезных
+                            инструментов (jQuery, Bootstrap, FontAwesome, Gulp, PostCSS, SASS).
+                        </p>
+                        <a href="https://adm1t.github.io/nizhrap" class="nizhrap linked-button" target="_blank">ССЫЛКА НА ПРОЕКТ</a>
+                        <a href="https://adm1t.github.io/HTML-Visual-Editor" class="html-editor linked-button" target="_blank">ССЫЛКА НА ПРОЕКТ</a>
+                    </aside>
+                    <figure>
+                        <img src="img/dendy.jpg" alt="Скриншот" class="screenshot dendy selected">
+                        <img src="img/nizhrap.jpg" alt="Скриншот" class="screenshot nizhrap">
+                        <img src="img/htmleditor.jpg" alt="Скриншот" class="screenshot html-editor">
+                    </figure>
+                </article>
+            </div>
+        </section>
+        <section id="contacts-section">
+            <header>− КОНТАКТЫ −</header>
+            <div class="icons-block">
+                <a href="mailto:filippov95@mail.ru"><img src="svg/envelope.svg" alt="e-mail"></a>
+                <a href="https://github.com/adm1t" target="_blank"><img src="svg/github.svg" alt="github"></a>
+                <a href="skype:live:g03u31"><img src="svg/skype.svg" alt="skype"></a>
+                <a href="tg://resolve?domain=adm1t"><img src="svg/telegram.svg" alt="telegram"></a>
+                <a href="https://vk.com/dima_adm1t" target="_blank"><img src="svg/vk.svg" alt="vk"></a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
